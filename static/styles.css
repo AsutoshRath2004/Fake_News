@@ -1,0 +1,29 @@
+body {
+    background-color: #4ca2f8;
+}
+
+.container {
+    padding-top: 20vh;
+    margin-top: 100px;
+}
+
+.loader {
+    border: 8px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 8px solid #3498db;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+    display: none;
+    margin: 0 auto;
+}
+
+.result p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

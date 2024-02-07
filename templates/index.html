@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake News Detector</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../static/styles.css">
+
+</head>
+<body>
+    <div><br><p><b>{{prediction_text}}</b></p></div>
+    <div class="container">
+        <h1 class="text-center mb-4">Fake News Detector</h1>
+        <br>
+        
+        <br>
+        <form action="/prediction" method="POST">
+            <div class="form-group">
+                <textarea id="newsArticle" class="form-control" rows="5" placeholder="Enter the news article"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block" >Detect</button>
+            
+            <div class="loader" id="loader"></div>
+        </form>
+    </div>
+        
+        
+    
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
